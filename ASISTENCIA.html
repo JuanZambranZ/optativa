@@ -80,25 +80,25 @@
         <form class="">
             <div class="form-group">
                 <label for="nombre"> Nombre:</label>
-                <input class="form-control" type="text" id="nombre" placeholder="Carlos Medardo" >
+                <input class="form-control" type="text" id="nombre" placeholder="Carlos Medardo"maxlength="20" required >
             </div>
             <div class="form-group">
                 <label for="apellidos"> Apellidos:</label>
-                <input class="form-control" type="text" id="apellidos" placeholder="Mendoza Cevallos" >
+                <input class="form-control" type="text" id="apellidos" placeholder="Mendoza Cevallos" maxlength="20" required >
             </div>
             <div class="form-group">
                 <label for="telefono"> Telefono:</label>
-                <input class="form-control" type="text" id="telefono" placeholder="09-XXXX-XXXX" >
+                <input class="form-control" type="tel" id="telefono" placeholder="09-XXXX-XXXX" pattern="[0-9]{10}" required>
             </div>
             <div class="form-group">
                 <label for="email"> Email:</label>
-                <input class="form-control" type="text" id="email" placeholder="dfoe@yopmail.com">
+                <input class="form-control" type="email" id="email" aria-describedby="emailHelp" placeholder="dfoe@yopmail.com" required>
             </div>
 
             <div class="form-group">
                 <label for="mensaje"> Mensaje:</label>
 
-                <textarea class="form-control" id="mensaje" placeholder="Ingrese su comentario o el modelo del articulo del cual usted esta interesado"></textarea >
+                <textarea class="form-control" id="mensaje" placeholder="Ingrese su comentario o el modelo del articulo del cual usted esta interesado" maxlength="50" required></textarea >
             </div>
 
             <div class="form-group" >
